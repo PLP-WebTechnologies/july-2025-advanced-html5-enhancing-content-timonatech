@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form & Media Demo</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Enhanced HTML5 Page</h1>
+    <p>Explore lists, tables, media, and a validated HTML5 form</p>
+</header>
+
+<main>
+
+    <!-- Section 1: Lists -->
+    <section>
+        <h2>Top 5 Web Technologies</h2>
+        <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ol>
+
+        <h3>HTML5 Features Used:</h3>
+        <ul>
+            <li>Semantic Elements</li>
+            <li>Native Form Validation</li>
+            <li>Media Embedding</li>
+            <li>Accessible Forms</li>
+        </ul>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+        <h2>Popular Web Browsers (2025 Stats)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Browser</th>
+                    <th>Market Share</th>
+                    <th>Platform</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google Chrome</td>
+                    <td>64%</td>
+                    <td>Windows, Mac, Linux</td>
+                </tr>
+                <tr>
+                    <td>Safari</td>
+                    <td>19%</td>
+                    <td>macOS, iOS</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>4%</td>
+                    <td>Cross-platform</td>
+                </tr>
+                <tr>
+                    <td>Edge</td>
+                    <td>7%</td>
+                    <td>Windows, macOS</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+        <h2>HTML5 Media Example</h2>
+        <article>
+            <h3>Sample Image</h3>
+            <img src="Cristiano’s fitness highlights 1.jpeg" alt="Placeholder Image">
+        </article>
+
+        <article>
+            <h3>Sample Video</h3>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+
+    <!-- Section 4: Form -->
+    <section>
+        <h2>Contact Us Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="John" minlength="2">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required placeholder="Doe" minlength="2">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">--Select--</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <label for="comments">Your Message:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your message here..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe" checked>
+                    Subscribe to newsletter
+                </label>
+
+                <label>
+                    <input type="radio" name="contact_method" value="email" required>
+                    Contact via Email
+                </label>
+
+                <label>
+                    <input type="radio" name="contact_method" value="phone">
+                    Contact via Phone
+                </label>
+
+                <label for="readonly">Form ID (Read-Only):</label>
+                <input type="text" id="readonly" name="form_id" value="FORM-2025-001" readonly>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Demo Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
